@@ -1,0 +1,23 @@
+.button {
+    display: inline-block;
+    padding: 18px 30px;
+    font-weight: 600;
+    background: #efefef;
+    border: #333 solid 1px;
+    border-radius: 8px;
+    text-align: center;
+
+    &.primary {
+        background: #153cff;
+        color: #fff;
+        border-color: #001fbd;
+    }
+
+    &.block {
+        display: block;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}

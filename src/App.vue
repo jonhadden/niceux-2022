@@ -1,7 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import Header from '@/components/Header.vue'
-import Testimonials from '@/components/Testimonials.vue'
+import Header from '@/components/Header/Header.vue'
+import Testimonials from '@/components/Testimonials/Testimonials.vue'
 import Footer from '@/components/Footer.vue'
 </script>
 
