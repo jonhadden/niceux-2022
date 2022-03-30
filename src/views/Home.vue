@@ -1,14 +1,12 @@
 <script setup>
   import Hero from '@/components/Hero/Hero.vue'
-  import Services from '@/components/Services/Services.vue'
-  import Clients from '@/components/Clients.vue'
+  import Clients from '@/components/Clients/Clients.vue'
   import CaseStudies from '@/components/CaseStudies.vue'
 </script>
 
 <template>
   <main class="home">
     <Hero />
-    <Services />
     <Clients />
     <CaseStudies :caseStudies="caseStudies" />
     <Articles :articles="articles" />

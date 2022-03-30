@@ -1,16 +1,23 @@
 .button {
     display: inline-block;
-    padding: 18px 30px;
-    font-weight: 600;
-    background: #efefef;
+    padding: 12px 32px;
+    background: #fff;
     border: #333 solid 1px;
-    border-radius: 8px;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.3);
+    outline: rgba(0, 0, 0, 0.1) solid 4px;
+    border-radius: 4px;
     text-align: center;
+    transition: outline 200ms;
 
     &.primary {
-        background: #153cff;
-        color: #fff;
-        border-color: #001fbd;
+        font-size: 1.25rem;
+        font-weight: 500;
+        padding: 12px 32px;
+        margin-top: 1rem;
+        display: inline-block;
+        border-radius: 4px;
+        background: #fff;
+        outline: rgba(66, 211, 146, 0.9) solid 4px;
     }
 
     &.block {
@@ -19,5 +26,10 @@
 
     &:hover {
         cursor: pointer;
+        outline: rgba(0, 0, 0, 0.1) solid 6px;
+
+        &.primary {
+            outline: rgba(66, 211, 146, 1) solid 6px;
+        }
     }
 }

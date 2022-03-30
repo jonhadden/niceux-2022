@@ -1,0 +1,64 @@
+.clients {
+    text-align: center;
+    padding: 3rem 0 160px;
+}
+
+.clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0 6rem;
+    li {
+        width: 100%;
+        padding-top: 140px;
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+        line-height: 1.2;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 50%;
+
+        @include breakpoint(xs) {
+            width: 50%;
+        }
+        @include breakpoint(sm) {
+            width: 33%;
+        }
+        @include breakpoint(md) {
+            width: 25%;
+        }
+
+        &.harvard {
+            background-image: url("@/assets/images/logo-harvard.png");
+        }
+        &.ses {
+            background-image: url("@/assets/images/logo-ses.png");
+            background-size: 50%;
+        }
+        &.vectice {
+            background-image: url("@/assets/images/logo-vectice.png");
+        }
+        &.dnb {
+            background-image: url("@/assets/images/logo-dnb.png");
+        }
+        &.intuit {
+            background-image: url("@/assets/images/logo-intuit.png");
+        }
+        &.visa {
+            background-image: url("@/assets/images/logo-visa.png");
+        }
+        &.dept-energy {
+            background-image: url("@/assets/images/logo-dept-energy.png");
+        }
+        &.dcsa {
+            background-image: url("@/assets/images/logo-dcsa.png");
+        }
+        &.optum {
+            background-image: url("@/assets/images/logo-optum.png");
+        }
+        &.yahoo {
+            background-image: url("@/assets/images/logo-yahoo.png");
+        }
+    }  
+}
