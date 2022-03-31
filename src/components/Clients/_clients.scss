@@ -1,64 +1,74 @@
 .clients {
     text-align: center;
-    padding: 3rem 0 160px;
+    padding: 3rem 20px 160px;
 }
 
 .clients-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2rem 0 6rem;
-    li {
-        width: 100%;
-        padding-top: 140px;
-        margin-bottom: 10px;
-        font-size: 0.9rem;
-        line-height: 1.2;
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-size: 50%;
+    margin: 26px 0 46px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-gap: 1rem;
+    text-align: left;
+    > div {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 1px 16px 0 rgba(0,0,0,0.08);
+        padding: 1rem;
+        position: relative;
+        &::before {
+            content: "";
+            display: block;
+            padding-bottom: 85%;
+        }
+        img {
+            position: absolute;
+            max-width: 80%;
 
-        @include breakpoint(xs) {
-            width: 50%;
+            // Alternate Version
+            // top: 0;
+            // bottom: 0;
+            // right: 0;
+            // left: 0;
+            // margin: auto;
+
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
         }
-        @include breakpoint(sm) {
-            width: 33%;
-        }
-        @include breakpoint(md) {
-            width: 25%;
+        span {
+            font-weight: 500;
+            font-size: 0.85rem;
+            display: inline-block;
         }
 
-        &.harvard {
-            background-image: url("@/assets/images/logo-harvard.png");
+        &:nth-child(2){
+            img {
+                max-width: 60%;
+            }
         }
-        &.ses {
-            background-image: url("@/assets/images/logo-ses.png");
-            background-size: 50%;
+        &:nth-child(5){
+            img {
+                max-width: 70%;
+            }
+        }        
+        &:nth-child(6){
+            img {
+                max-width: 60%;
+            }
+        }      
+        &:nth-child(7){
+            img {
+                top: 36%;
+                max-width: 60%;
+            }
+        }      
+        &:nth-child(8){
+            img {
+                top: 36%;
+                max-width: 60%;
+            }
         }
-        &.vectice {
-            background-image: url("@/assets/images/logo-vectice.png");
-        }
-        &.dnb {
-            background-image: url("@/assets/images/logo-dnb.png");
-        }
-        &.intuit {
-            background-image: url("@/assets/images/logo-intuit.png");
-        }
-        &.visa {
-            background-image: url("@/assets/images/logo-visa.png");
-        }
-        &.dept-energy {
-            background-image: url("@/assets/images/logo-dept-energy.png");
-        }
-        &.dcsa {
-            background-image: url("@/assets/images/logo-dcsa.png");
-        }
-        &.optum {
-            background-image: url("@/assets/images/logo-optum.png");
-        }
-        &.yahoo {
-            background-image: url("@/assets/images/logo-yahoo.png");
-        }
-    }  
+    }
 }

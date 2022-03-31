@@ -2,18 +2,48 @@
   <section class="clients">
     <section class="container">
       <h2>Who we've partnered with</h2>
-      <ul class="clients-list">
-          <li class="harvard">Admissions Management</li>
-          <li class="ses">Satellite Capacity Management</li>
-          <li class="vectice">Data Science Workflow Management</li>
-          <li class="dnb">AI-Powered Predictive Marketing Analysis</li>
-          <li class="intuit">Fintech</li>
-          <li class="visa">Fintech</li>
-          <li class="dept-energy">Energy Efficiency Analysis</li>
-          <li class="dcsa">Cyber Security</li>
-          <li class="optum">Healthcare System Management</li>
-          <li class="yahoo">Web Stuff</li>
-      </ul>
+      <div class="clients-list">
+        <div>
+          <img src="@/assets/images/logo-harvard.png" alt="Harvard Logo" />
+          <span>Admissions Management</span>
+        </div>
+        <div>
+          <img src="@/assets/images/logo-ses.png" alt="" />
+          <span>Satellite Capacity Management</span>
+        </div>
+        <div>
+          <img src="@/assets/images/logo-vectice.png" alt="" />
+          <span>Data Science Workflow</span>
+        </div>
+        <div>
+          <img src="@/assets/images/logo-dnb.png" alt="" />
+          <span>AI-Powered Predictive Marketing Analysis</span>
+        </div>
+        <div>
+          <img src="@/assets/images/logo-intuit.png" alt="" />
+          <span>Fintech</span>
+        </div>
+        <div>
+          <img src="@/assets/images/logo-visa.png" alt="" />
+          <span>Fintech</span>
+        </div>
+        <div>
+          <img src="@/assets/images/logo-dept-energy.png" alt="" />
+          <span>Energy Efficiency Analysis</span>
+        </div>
+        <div>
+          <img src="@/assets/images/logo-dcsa.png" alt="" />
+          <span>Cyber Security</span>
+        </div>
+        <div>
+          <img src="@/assets/images/logo-optum.png" alt="" />
+          <span>Healthcare System Management</span>
+        </div>
+        <div>
+          <img src="@/assets/images/logo-yahoo.png" alt="" />
+          <span>Quality Assurance Management</span>
+        </div>
+      </div>
       <a 
           href="#footer"
           title="Contact Us"

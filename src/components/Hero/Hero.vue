@@ -1,7 +1,7 @@
 <template>
   <section class="hero">
     <section class="container">
-        <h1>Custom software design <br/>and development</h1>
+        <h1>Custom software design and development</h1>
         <h2>Whether you need help deciding how prioritize what to work on next, understanding your users, or taking existing designs and building a comprehensive software application, we can help you.</h2>
         <ul class="services-list">
           <li class="research">User <br/>Research</li>
