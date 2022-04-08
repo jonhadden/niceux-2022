@@ -9,22 +9,33 @@ body {
     font-family: 'Suez One', serif;
 }
 
-h1, h2, h3, h4 {
+h1, h2 {
     font-weight: 800;
+}
+h3, h4 {
+    font-weight: 500;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
 }
 
 h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
 }
 
 h3 {
     font-size: 1.25rem;
 }
-
+strong {
+    font-weight: 800;
+}
+dt {
+    font-weight: 800;
+}
+dd {
+    margin-bottom: 0.25rem;
+}
 a {
     color: #0080f5;
     &:hover {

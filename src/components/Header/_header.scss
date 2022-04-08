@@ -12,6 +12,12 @@
         justify-content: space-between;
         align-items: center;
     }
+    .social-links {
+        display: none;
+        @include breakpoint(sm) {
+            display: flex;
+        }
+    }
 }
 .logo {
     display: flex;
