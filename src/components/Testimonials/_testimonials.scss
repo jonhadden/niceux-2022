@@ -14,7 +14,7 @@
   width: min(95%, 70rem);
   margin-inline: auto;
 
-  @include breakpoint(sm) {
+  @include breakpoint(xs) {
     grid-template-areas:
     "one one"
     "two three"
@@ -22,7 +22,7 @@
     "four four";
   }
   
-  @include breakpoint(md) {
+  @include breakpoint(sm) {
     grid-template-areas:
     'one one'
     'two five'
@@ -30,14 +30,14 @@
     'four four';
   }
   
-  @include breakpoint(lg) {
+  @include breakpoint(md) {
     grid-template-areas:
     "one one two"
     "five five five"
     "three four four";
   }
   
-  @include breakpoint(xl) {
+  @include breakpoint(lg) {
     grid-template-areas:
     "one one two five"
     "three four four five";

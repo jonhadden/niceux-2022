@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@vue-hero-icons/outline": "^1.7.2",
+    "axios": "^0.26.1",
     "vue": "^3.2.31",
     "vue-router": "^4.0.12"
   },

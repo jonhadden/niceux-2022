@@ -2,9 +2,9 @@
   <section class="case-studies">
     <section class="container">
       <h2>Work we're proud of</h2>
-      <ul>
+      <ul v-if="caseStudies">
         <li v-for="project in caseStudies" :key="project.id">
-          <img :src="project.acf.list_image.sizes.medium_large  " alt="" />
+          <img :src="project.acf.list_image.sizes.medium_large" alt="" />
           <h3>{{ project.title.rendered }}</h3>
           <p>{{ project.acf.lead_in }}</p>
         </li>
@@ -13,16 +13,25 @@
   </section>
 </template>
 
-<script>
-export default {
-  props: ['caseStudies'],
-  data() {
-    return {
-    }
-  },
-  created() {
+<script setup>
+import { ref, onMounted } from 'vue'
+import axios from 'axios'
+let caseStudies = ref(null)
+const caseStudyFetchUrl = 'https://niceux.com/admin/wp-json/wp/v2/projects';
+
+onMounted(async () => {
+
+  if (!caseStudies.value) {
+    caseStudies.value = await axios
+        .get(caseStudyFetchUrl)
+        .then(response => {
+          return response.data
+        })
+        .catch(function (error) {
+          console.log(error);
+        })
   }
-}
+})
 </script>
 
 <style lang="scss">

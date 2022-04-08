@@ -24,3 +24,11 @@ h2 {
 h3 {
     font-size: 1.25rem;
 }
+
+a {
+    color: #0080f5;
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
