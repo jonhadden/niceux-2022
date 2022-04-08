@@ -4,9 +4,6 @@ import { RouterLink } from 'vue-router'
 
 <template>
     <section>
-        <!-- <div class="promo">
-            We stand behind Ukraine
-        </div> -->
         <header class="main-header">
             <div class="container">
 
@@ -49,10 +46,6 @@ import { RouterLink } from 'vue-router'
                         </a>
                     </li>
                 </ul>
-                <!-- <nav>
-                    <RouterLink to="/">Home</RouterLink>
-                    <RouterLink to="/about">About</RouterLink>
-                </nav> -->
             </div>
         </header>
     </section>

@@ -4,9 +4,11 @@
       <h2>Work we're proud of</h2>
       <ul v-if="caseStudies">
         <li v-for="project in caseStudies" :key="project.id">
-          <img :src="project.acf.list_image.sizes.medium_large" alt="" />
-          <h3>{{ project.title.rendered }}</h3>
-          <p>{{ project.acf.lead_in }}</p>
+          <RouterLink :to="{ name: 'CaseStudy', params: { slug: project.slug }}">
+            <img :src="project.acf.list_image.sizes.medium_large" alt="" />
+            <h3>{{ project.title.rendered }}</h3>
+            <p>{{ project.acf.lead_in }}</p>
+          </RouterLink>
         </li>
       </ul>
     </section>
