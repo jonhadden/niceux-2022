@@ -9,7 +9,10 @@ import { RouterLink } from 'vue-router'
         </div> -->
         <header class="main-header">
             <div class="container">
-                <span class="logo">NiceUX</span>
+                <span class="logo">
+                    <img src="@/assets/images/logo-niceux.svg" alt="" />
+                    <span>NiceUX</span>
+                </span>
                 <!-- <nav>
                     <RouterLink to="/">Home</RouterLink>
                     <RouterLink to="/about">About</RouterLink>

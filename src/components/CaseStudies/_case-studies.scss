@@ -1,0 +1,22 @@
+.case-studies {
+    text-align: center;
+    padding: 3rem 20px 5rem;
+
+    ul {
+        display: grid;
+        gap: 1rem;
+
+        @include breakpoint(sm) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    li {
+        padding: 10px;
+        border: #ededed solid 1px;
+        text-align: left;
+    }
+    p {
+        font-size: 0.85rem;
+    }
+}

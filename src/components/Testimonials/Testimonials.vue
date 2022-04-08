@@ -1,9 +1,9 @@
 <template>
   <section class="testimonial-grid">
-    <article class="testimonial grid-col-span-2 flow bg-primary-400 quote text-neutral-100">
+    <article>
       <div class="flex">
         <div>
-          <img  src="./images/image-daniel.jpg" alt="daniel clifford">
+          <!-- <img  src="./images/image-daniel.jpg" alt="daniel clifford"> -->
         </div>
         <div>
           <h2 class="name">Daniel Clifford</h2>
@@ -22,10 +22,10 @@
         the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
       </p>
     </article>
-    <article class="testimonial flow bg-secondary-400 text-neutral-100">
+    <article>
       <div class="flex">
         <div>
-          <img src="./images/image-jonathan.jpg" alt="Jonathan Walters">
+          <!-- <img src="./images/image-jonathan.jpg" alt="Jonathan Walters"> -->
         </div>
         <div>
           <h2 class="name">Jonathan Walters</h2>
@@ -40,10 +40,10 @@
         for a big company. This was one of the best investments I’ve made in myself. ”
       </p>
     </article>
-    <article class="testimonial flow bg-neutral-100 text-secondary-400">
+    <article>
       <div class="flex">
         <div>
-          <img src="./images/image-jeanette.jpg" alt="Jeanette Harmon">
+          <!-- <img src="./images/image-jeanette.jpg" alt="Jeanette Harmon"> -->
         </div>
         <div>
           <h2 class="name">Jeanette Harmon</h2>
@@ -57,10 +57,10 @@
         while doing something I love. ”
       </p>
     </article>
-    <article class="testimonial grid-col-span-2 flow bg-secondary-500 text-neutral-100">
+    <article>
       <div class="flex">
         <div>
-          <img class="border-primary-400" src="./images/image-patrick.jpg" alt="Patrick Abrams">
+          <!-- <img class="border-primary-400" src="./images/image-patrick.jpg" alt="Patrick Abrams"> -->
         </div>
         <div>
           <h2 class="name">Patrick Abrams</h2>
@@ -78,10 +78,10 @@
         an incredible community of smart and amazing people. ”
       </p>
     </article>
-    <article class="testimonial flow bg-neutral-100 text-secondary-400">
+    <article>
       <div class="flex">
         <div>
-          <img src="./images/image-kira.jpg" alt="Kira Whittle">
+          <!-- <img src="./images/image-kira.jpg" alt="Kira Whittle"> -->
         </div>
         <div>
           <h2 class="name">Kira Whittle</h2>

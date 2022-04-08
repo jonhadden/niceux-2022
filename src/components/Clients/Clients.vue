@@ -20,6 +20,10 @@
           <span>AI-Powered Predictive Marketing Analysis</span>
         </div>
         <div>
+          <img src="@/assets/images/logo-lattice.png" alt="" />
+          <span>AI-Powered Predictive Marketing Analysis</span>
+        </div>
+        <div>
           <img src="@/assets/images/logo-intuit.png" alt="" />
           <span>Fintech</span>
         </div>
@@ -40,12 +44,16 @@
           <span>Healthcare System Management</span>
         </div>
         <div>
+          <img src="@/assets/images/logo-anthem.png" alt="" />
+          <span>Healthcare Design System</span>
+        </div>
+        <div>
           <img src="@/assets/images/logo-yahoo.png" alt="" />
           <span>Quality Assurance Management</span>
         </div>
       </div>
       <a 
-          href="#footer"
+          href="mailto:jon@niceux.com"
           title="Contact Us"
           class="button">
           Want to partner with us?
