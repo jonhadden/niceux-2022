@@ -24,14 +24,6 @@
         img {
             position: absolute;
             max-width: 80%;
-
-            // Alternate Version
-            // top: 0;
-            // bottom: 0;
-            // right: 0;
-            // left: 0;
-            // margin: auto;
-
             top: 30%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -65,6 +57,12 @@
             }
         }      
         &:nth-child(8){
+            img {
+                top: 36%;
+                max-width: 60%;
+            }
+        }    
+        &:nth-child(9){
             img {
                 top: 36%;
                 max-width: 60%;

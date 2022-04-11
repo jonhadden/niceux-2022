@@ -1,0 +1,12 @@
+.social-links {
+    ul {
+        display: flex;
+        a {
+            padding: 6px 8px;
+            &:hover {
+                background: rgba(0,0,0,0.05);
+                border-radius: 4px;
+            }
+        }
+    }
+}

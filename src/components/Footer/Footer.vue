@@ -1,10 +1,12 @@
 <script setup>
   import Testimonials from '@/components/Testimonials/Testimonials.vue'
+  import SocialLinks from '@/components/SocialLinks/SocialLinks.vue'
   import Copyright from '@/components/Copyright/Copyright.vue'
 </script>
 
 <template>
   <footer class="footer">
+    <SocialLinks />
     <Copyright />
   </footer>
 </template>

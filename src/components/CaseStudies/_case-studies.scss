@@ -2,6 +2,24 @@
     text-align: center;
     padding: 3rem 20px 5rem;
 
+    h2 {
+        margin-bottom: 2rem;
+    }
+    a {
+        color: #333;
+        padding: 10px;
+        border: #ededed solid 1px;
+        border-radius: 4px;
+        text-align: left;
+        display: inline-block;
+        &:hover {
+            color: #333;
+            border-color: #00509b;
+            box-shadow: 0 1px 6px 0 rgba(0,0,0,0.3);
+            outline: #0080f5 solid 4px;
+            text-decoration: none;
+        }
+    }
     ul {
         display: grid;
         gap: 1rem;
@@ -9,12 +27,6 @@
         @include breakpoint(sm) {
             grid-template-columns: 1fr 1fr;
         }
-    }
-
-    li {
-        padding: 10px;
-        border: #ededed solid 1px;
-        text-align: left;
     }
     p {
         font-size: 0.85rem;

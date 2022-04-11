@@ -18,6 +18,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import axios from 'axios'
+
 let caseStudies = ref(null)
 const caseStudyFetchUrl = 'https://niceux.com/admin/wp-json/wp/v2/projects';
 
@@ -27,7 +28,8 @@ onMounted(async () => {
     caseStudies.value = await axios
         .get(caseStudyFetchUrl)
         .then(response => {
-          return response.data
+          const featured = response.data.filter(project => project.acf.featured_case_study == true);
+          return featured
         })
         .catch(function (error) {
           console.log(error);

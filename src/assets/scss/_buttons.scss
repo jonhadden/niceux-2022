@@ -8,6 +8,7 @@
     border-radius: 4px;
     text-align: center;
     transition: outline 200ms;
+    color: #333;
 
     &.primary {
         font-size: 1.25rem;
@@ -25,6 +26,7 @@
     }
 
     &:hover {
+        text-decoration: none;
         cursor: pointer;
         outline: rgba(0, 0, 0, 0.1) solid 6px;
 

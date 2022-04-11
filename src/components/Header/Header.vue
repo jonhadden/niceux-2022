@@ -1,5 +1,13 @@
 <script setup>
-import { RouterLink } from 'vue-router'
+    import { ref, onMounted } from 'vue'
+    import { RouterLink } from 'vue-router'
+    import SocialLinks from '@/components/SocialLinks/SocialLinks.vue' 
+
+    let showMenu = ref(false)
+
+    onMounted(() => {
+        
+    })
 </script>
 
 <template>
@@ -7,47 +15,33 @@ import { RouterLink } from 'vue-router'
         <header class="main-header">
             <div class="container">
 
-                <span class="logo">
-                    <img src="@/assets/images/logo-niceux.svg" alt="" />
+                <RouterLink 
+                    :to="{ path: '/' }"
+                    class="logo">
+                    <img src="@/assets/images/logo-niceux.png" alt="Nice U X Logo" />
                     <span>NiceUX</span>
-                </span>
+                </RouterLink>
 
-                <ul class="social-links">
-                    <li>
-                        <a 
-                            href="https://medium.com/@niceux" 
-                            alt="Nice U X Medium articles"
-                            target="_blank">
-                            Medium
-                        </a>
-                    </li>
-                    <li>
-                        <a 
-                            href="https://github.com/niceux" 
-                            alt="Nice U X GitHub repositories"
-                            target="_blank">
-                            GitHub
-                        </a>
-                    </li>
-                    <li>
-                        <a 
-                            href="https://stackblitz.com/@jonhadden" 
-                            alt="Nice U X StackBlitz snippet projects"
-                            target="_blank">
-                            StackBlitz
-                        </a>
-                    </li>
-                    <li>
-                        <a 
-                            href="https://www.linkedin.com/company/niceux/" 
-                            alt="Nice U X LinkedIn page"
-                            target="_blank">
-                            LinkedIn
-                        </a>
-                    </li>
-                </ul>
+
+                <div 
+                    class="hamburger hamburger--spin"
+                    :class="{ showMenu: is-active }"
+                    @click="showMenu = !showMenu">
+                    <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                    </div>
+                </div>
+                <nav :class="{  showMenu: show-menu }">
+                    <ul class="menu-items">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <SocialLinks />    
+                </nav>
             </div>
         </header>
+        
     </section>
 </template>
 
