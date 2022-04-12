@@ -1,3 +1,33 @@
+<script setup>
+  import { ref, onBeforeMount } from 'vue'
+  import { useRoute } from 'vue-router'
+  import axios from 'axios'
+
+  import Loading from '@/components/Loading/Loading.vue'
+
+  const route = useRoute()
+  let caseStudy = ref(null)
+  const caseStudyFetchUrl = `https://niceux.com/admin/wp-json/wp/v2/projects?slug=${route.params.slug}`;
+
+  onBeforeMount(async () => {
+
+    window.scrollTo(0,0);
+
+    if (!caseStudy.value) {
+      caseStudy.value = await axios
+          .get(caseStudyFetchUrl)
+          .then(response => {
+            const responseObj = response.data[0];
+            return responseObj;
+          })
+          .catch(function (error) {
+            console.log(error);
+          })
+    }
+  })
+</script>
+
+
 <template>
   <section class="case-study">
     <article v-if="caseStudy">
@@ -33,36 +63,10 @@
       </section><!-- End .container -->
     </article>
     <article v-else>
-      Loading...
+      <Loading />
     </article>
   </section>
 </template>
-
-<script setup>
-  import { ref, onBeforeMount } from 'vue'
-  import { useRoute } from 'vue-router'
-  import axios from 'axios'
-
-  const route = useRoute()
-  let caseStudy = ref(null)
-  const caseStudyFetchUrl = `https://niceux.com/admin/wp-json/wp/v2/projects?slug=${route.params.slug}`;
-
-  onBeforeMount(async () => {
-
-    if (!caseStudy.value) {
-      caseStudy.value = await axios
-          .get(caseStudyFetchUrl)
-          .then(response => {
-            const responseObj = response.data[0];
-            return responseObj;
-          })
-          .catch(function (error) {
-            console.log(error);
-          })
-    }
-  })
-</script>
-
 
 <style lang="scss">
   @import "./_case-study.scss";

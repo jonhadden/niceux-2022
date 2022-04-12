@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&family=Suez+One&display=swap');
-
+a:focus, button:focus {
+    outline: rgba(66, 211, 146, 0.9) solid 3px;
+}
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;

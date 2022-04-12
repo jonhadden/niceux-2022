@@ -1,6 +1,7 @@
 .case-studies {
     text-align: center;
-    padding: 3rem 20px 5rem;
+    padding: 6rem 20px 6rem;
+    border-bottom: #efefef solid 1px;
 
     h2 {
         margin-bottom: 2rem;
@@ -12,21 +13,21 @@
         border-radius: 4px;
         text-align: left;
         display: inline-block;
+        transition: all .2s ease-in-out; 
         &:hover {
             color: #333;
             border-color: #00509b;
             box-shadow: 0 1px 6px 0 rgba(0,0,0,0.3);
             outline: #0080f5 solid 4px;
             text-decoration: none;
+            transform: scale(1.01); 
         }
     }
     ul {
         display: grid;
         gap: 1rem;
 
-        @include breakpoint(sm) {
-            grid-template-columns: 1fr 1fr;
-        }
+       
     }
     p {
         font-size: 0.85rem;

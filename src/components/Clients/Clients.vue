@@ -53,7 +53,7 @@
         </div>
       </div>
       <a 
-          href="mailto:jon@niceux.com"
+          href="mailto:info@niceux.com?subject=I have some questions about NiceUX"
           title="Contact Us"
           class="button">
           Want to partner with us?

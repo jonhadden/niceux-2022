@@ -1,0 +1,52 @@
+.loading {
+    background: #f1f1f1;
+    border-radius: 6px;
+    padding: 120px 40px 140px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 100rem;
+    .icon {
+        width: 20px;
+        height: 24px;
+        border: 1px rgba(0,0,0,0.6) solid;
+        border-radius: 0px 0px 5px 5px;
+        position: relative;
+        margin: 36px auto;
+        &:before, &:after {
+            position: absolute;
+            content: "";
+        }
+        &:before {
+            width: 1px;
+            height: 6px;
+            background-color: rgba(0,0,0,0.6);
+            top: -10px;
+            left: 4px;
+            box-shadow: 5px 0px 0px 0px rgb(0 0 0), 5px -5px 0px 0px rgb(0 0 0), 10px 0px 0px 0px rgb(0 0 0);
+            -webkit-animation: steam 250ms linear infinite alternate;
+            -moz-animation: steam 250ms linear infinite alternate;
+            animation: steam 250ms linear infinite alternate;
+        }
+        &:after {
+            width: 5px;
+            height: 12px;
+            border: 1px #333 solid;
+            border-left: none;
+            border-radius: 0px 20px 20px 0px;
+            left: 20px;
+        }            
+    }
+}
+@-webkit-keyframes steam{
+    0%{height: 0px;}
+    100%{height: 6px;}
+}
+@-moz-keyframes steam{
+    0%{height: 0px}
+    100%{height: 6px;}
+}
+@keyframes steam{
+    0%{height: 0px}
+    100%{height: 6px;}
+}

@@ -1,11 +1,32 @@
 .social-links {
     ul {
-        display: flex;
+        display: grid;
+        gap: 1rem;
         a {
-            padding: 6px 8px;
+            padding: 6px 8px 6px 32px;
+            background-size: 26px;
+            background-repeat: no-repeat;
+            background-position: left;
+            display: block;
             &:hover {
-                background: rgba(0,0,0,0.05);
+                background-color: rgba(0,0,0,0.05);
                 border-radius: 4px;
+            }
+            &.facebook {
+                background-image: url("@/assets/images/logo-facebook.svg");
+                
+            }
+            &.linkedin {
+                background-image: url("@/assets/images/logo-linkedin.svg");
+            }
+            &.medium {
+                background-image: url("@/assets/images/logo-medium.svg");
+            }
+            &.github {
+                background-image: url("@/assets/images/logo-github.svg");
+            }
+            &.stackblitz {
+                background-image: url("@/assets/images/logo-stackblitz.png");
             }
         }
     }
