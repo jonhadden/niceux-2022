@@ -2,14 +2,50 @@
     text-align: center;
     padding: 6rem 20px 0rem;
     h2 {
-        margin-bottom: 2rem;
+        margin-bottom: 0.5rem;
     }
-    h3 {
-        margin-bottom: 2rem;
+    h3:first-of-type {
+        margin-bottom: 1.5rem;
     }
     ul {
-        margin-top: 1rem;
-        display: none;
+        margin: 1rem 0 2rem;
+        display: grid;
+        gap: 1rem;
+        text-align: left;
+        font-size: 0.9rem;
+        li {
+            flex: 1;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        h4 {
+            font-weight: 800;
+        }
+        img {
+            max-width: 80px;
+        }
+
+        @include breakpoint(xs) {
+            img {
+                max-width: 120px;
+            }
+        }
+        @include breakpoint(sm) {
+            img {
+                max-width: 160px;
+            }
+        }
+        @include breakpoint(md) {
+            display: flex;
+            li {
+                display: grid;
+            }
+            img {
+                height: auto;
+                max-width: 100%;
+            }
+        }
     }
     small {
         font-size: 0.85rem;

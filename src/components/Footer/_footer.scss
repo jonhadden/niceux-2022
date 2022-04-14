@@ -1,7 +1,21 @@
 .footer {
     background: rgb(36, 36, 48);
 
+    a {
+        color: #fff;
+    }
+
     .social-links {
-        margin: 1rem 0;
+        padding: 2rem 0;
+        ul {
+            gap: 0;
+            a {
+                padding: 12px 16px 12px 50px;
+                background-position: 1rem;
+            }
+            @include breakpoint(sm) {
+                display: flex;
+            }
+        }
     }
 }
