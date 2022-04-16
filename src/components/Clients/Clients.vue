@@ -56,7 +56,7 @@
           href="mailto:info@niceux.com?subject=I have some questions about NiceUX"
           title="Contact Us"
           class="button">
-          Want to partner with us?
+          Need our help? Let's find a time to chat.
       </a>
     </section>
   </section>

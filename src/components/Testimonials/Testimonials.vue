@@ -1,107 +1,54 @@
 <template>
-  <section class="testimonial-grid">
-    <article>
-      <div class="flex">
+  <section class="testimonials">
+    <h2>Don't take our word for it</h2>
+    <section class="container">
+      <article>
         <div>
-          <!-- <img  src="./images/image-daniel.jpg" alt="daniel clifford"> -->
+          <!-- <img src="@/assets/images/image-kira.jpg" alt="Kira Whittle"> -->
+          <div>
+            <h3>David Berglund</h3>
+            <p class="position">Global Head of Artificial Intelligence at FIS</p>
+          </div>
+        </div>
+        <p>Jon is an incredibly gifted user-experience professional. He comes to each meeting prepared and provides strategic guidance throughout project implementations. He has a vast knowledge base which he uses to inform user-centric designs. His knowledge of user-experience is only superseded by his warm and generous demeanor.</p>
+      </article>
+      <article>
+        <div>
+          <!-- <img src="@/assets/images/image-kira.jpg" alt="Kira Whittle"> -->
+          <div>
+            <h3>Jamey Lazarus</h3>
+            <p class="position">Senior Software Engineer at Visa</p>
+          </div>
+        </div>
+        <p>Jon Hadden is the complete UX/UI package and a valuable asset to my team. He has an excellent eye for UX Design and the UI engineering skills to implement everything with pixel perfect accuracy. Over the years I've come to depend on his CSS skills aswell as his Angular, React, and NodeJS coding ability. He is without a doubt one of the finest engineers I have dealt with, and a great guy as well.</p>
+      </article>
+      <article>
+        <div>
+          <!-- <img src="@/assets/images/image-kira.jpg" alt="Kira Whittle"> -->
+          <div>
+            <h3>Colin Miller</h3>
+            <p class="position">Senior Software Engineer at Google</p>
+          </div>
         </div>
         <div>
-          <h2 class="name">Daniel Clifford</h2>
-          <p class="position">Verified Graduate</p>
+          <p>Jon has a passion for his work that is too rare in any field. He constantly pushes developers to think about the user and the user experience. Many developers will attempt to implement something in a fashion that is easiest in the back end. However at times these implementations are difficult for the user to access.</p>
+          <p>An application that is difficult to use isn't a very good application. Jon has always advocated making sure that the user experience is as good as the technology laying the foundation to the application. Because of this I've always been glad to work with him on transforming applications into devices that our customers will be delighted to use.</p>
         </div>
-      </div>
-      <p>
-        I received a job offer mid-course, and the subjects I learned were current, if not more so,
-        in the company I joined. I honestly feel I got every penny’s worth.
-      </p>
-      <p>
-        “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a
-        transition and have heard some people who had an amazing experience here. I signed up
-        for the free intro course and found it incredibly fun! I enrolled shortly thereafter.
-        The next 12 weeks was the best - and most grueling - time of my life. Since completing
-        the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
-      </p>
-    </article>
-    <article>
-      <div class="flex">
+      </article>
+      <article>
         <div>
-          <!-- <img src="./images/image-jonathan.jpg" alt="Jonathan Walters"> -->
+          <!-- <img src="@/assets/images/image-kira.jpg" alt="Kira Whittle"> -->
+          <div>
+            <h3>Mike Atherton</h3>
+            <p class="position">UX Content Strategy Lead at Facebook</p>
+          </div>
         </div>
         <div>
-          <h2 class="name">Jonathan Walters</h2>
-          <p class="position">Verified Graduate</p>
+          <p>Jon is an amazingly talented and dedicated front-end designer and developer. He stepped in to help the IA Summit volunteer team when we were in need, and very quickly dug us out of a mess. Flawlessly tackling the refactoring of existing code, implementing new development workflows, and coming up with new design ideas - all so much better than we could have conceived of.</p>
+          <p>Jon's tireless effort, positive demeanor, technical expertise and creative flair make him the very model of a volunteer. Sadly we couldn't pay him, but you totally should.</p>
         </div>
-      </div>
-      <p>
-        The team was very supportive and kept me motivated
-      </p>
-      <p>
-        “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer
-        for a big company. This was one of the best investments I’ve made in myself. ”
-      </p>
-    </article>
-    <article>
-      <div class="flex">
-        <div>
-          <!-- <img src="./images/image-jeanette.jpg" alt="Jeanette Harmon"> -->
-        </div>
-        <div>
-          <h2 class="name">Jeanette Harmon</h2>
-          <p class="position">Verified Graduate</p>
-        </div>
-      </div>
-      <p>
-        An overall wonderful and rewarding experience</p>
-      <p>
-        “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living
-        while doing something I love. ”
-      </p>
-    </article>
-    <article>
-      <div class="flex">
-        <div>
-          <!-- <img class="border-primary-400" src="./images/image-patrick.jpg" alt="Patrick Abrams"> -->
-        </div>
-        <div>
-          <h2 class="name">Patrick Abrams</h2>
-          <p class="position">Verified Graduate</p>
-        </div>
-      </div>
-      <p>
-        Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and
-        learning from their experiences was easy.
-      </p>
-      <p>
-        “ The staff seem genuinely concerned about my progress which I find really refreshing. The program
-        gave me the confidence necessary to be able to go out in the world and present myself as a capable
-        junior developer. The standard is above the rest. You will get the personal attention you need from
-        an incredible community of smart and amazing people. ”
-      </p>
-    </article>
-    <article>
-      <div class="flex">
-        <div>
-          <!-- <img src="./images/image-kira.jpg" alt="Kira Whittle"> -->
-        </div>
-        <div>
-          <h2 class="name">Kira Whittle</h2>
-          <p class="position">Verified Graduate</p>
-        </div>
-      </div>
-      <p>
-        Such a life-changing experience. Highly recommended!
-      </p>
-      <p>
-        “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from
-        professionals who can help me learn programming step by step. I was encouraged to enroll by a former
-        student of theirs who can only say wonderful things about the program. The entire curriculum and staff
-        did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team
-        project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial
-        could ever have. In fact, I’ve often referred to it during interviews as an example of my developent
-        experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers.
-        100% recommend! ”
-      </p>
-    </article>
+      </article>
+    </section>
   </section>
 </template>
 

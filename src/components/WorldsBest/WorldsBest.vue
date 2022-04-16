@@ -18,7 +18,7 @@
         <li>
           <img src="@/assets/images/logo-bristol.png" alt="Image of Bristol in the United Kingdom" />
           <div>
-            <h4>Communication with Flexible Documentation: Efficient Product Design and Communication</h4>
+            <h4>Efficient Product Design and Communication</h4>
             <p>Collaborate Bristol / Bristol, United Kingdom / Lecture</p>
           </div>
         </li>
@@ -30,6 +30,7 @@
           </div>
         </li>
       </ul>
+
     </section>
   </section>
 </template>

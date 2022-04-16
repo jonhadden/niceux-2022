@@ -1,9 +1,16 @@
 .promo {
     text-align: center;
-    padding: 3rem 20px 0;
+    padding: 3rem 0 0;
     background: #e7eaf0;
     h2 {
         font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+    h3 {
+        font-size: 1.1rem;
         margin-bottom: 2rem;
+    }
+    img {
+        margin-top: 2rem;
     }
 }

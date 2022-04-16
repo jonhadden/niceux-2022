@@ -1,101 +1,38 @@
-/* components */
-.testimonial-grid {
-  display: grid;
-  gap: 1.5rem;
-  grid-auto-columns: 1fr;
-  grid-template-areas:
-    'one'
-    'two'
-    'three'
-    'four'
-    'five';
+.testimonials {
+  padding-top: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
 
-  padding-block: 2rem;
-  width: min(95%, 70rem);
-  margin-inline: auto;
-
-  @include breakpoint(xs) {
-    grid-template-areas:
-    "one one"
-    "two three"
-    "five five"
-    "four four";
+  h2 {
+    margin-bottom: 2rem;
   }
-  
-  @include breakpoint(sm) {
-    grid-template-areas:
-    'one one'
-    'two five'
-    'three five'
-    'four four';
+  .container {
+    display: grid;
+    gap: 1.5rem;
+    text-align: left;
   }
-  
-  @include breakpoint(md) {
-    grid-template-areas:
-    "one one two"
-    "five five five"
-    "three four four";
-  }
-  
-  @include breakpoint(lg) {
-    grid-template-areas:
-    "one one two five"
-    "three four four five";
-  }
-
-  & > article {
-    font-size: 1rem;
-    padding: 1rem;
-    background: rgba(255,255,255,0.1);
-    border-radius: 0.5rem;
-    box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-secondary-400) / 0.25);
-
-    &:nth-child(1) {
-      grid-area: one;
+  article {
+    background: #efefef;
+    padding: 2rem;
+    border-radius: 8px;
+    & > p {
+      margin-top: 0.85rem;
+      font-size: 0.85rem;
     }
-    &:nth-child(2) {
-      grid-area: two;
-    }
-    &:nth-child(3) {
-      grid-area: three;
-    }
-    &:nth-child(4) {
-      grid-area: four;
-    }
-    &:nth-child(5) {
-      grid-area: five;
-    }
-
-    &.quote {
-      // background-image: url("./images/bg-pattern-quotation.svg");
-      background-repeat: no-repeat;
-      background-position: top right 10%;
-    }
-    
     img {
-      width: 1.75rem;
-      aspect-ratio: 1;
-      border-radius: 50%;
+      display: none;
     }
-    
-    .name {
-      font-size: var(--fs-400);
-      font-weight: var(--fw-400);
-      line-height: 1;
-    }
-    
-    .position {
-      font-size: var(--fs-300);
-      opacity: 0.5;
-    }
-    
-    & > p:first-of-type {
-      font-size: var(--fs-500);
-      line-height: 1.2;
-    }
-    
-    & > p:last-of-type {
-      opacity: 0.7;
+
+    @include breakpoint(sm) {
+      &:nth-child(2) {
+        grid-column-start: 2;
+      }
+      &:nth-child(3) {
+        grid-column: 1 / span 2;
+      }
+      &:nth-child(4) {
+        grid-column: 1 / span 2;
+      }
     }
   }
 }

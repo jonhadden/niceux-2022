@@ -4,22 +4,22 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'Home',
       component: () => import('../views/Home/Home.vue')
     },
     {
       path: '/about',
-      name: 'about',
+      name: 'About',
       component: () => import('../views/About/About.vue')
     },
     {
       path: '/work',
-      name: 'work',
+      name: 'Work',
       component: () => import('../views/Work/Work.vue')
     },
     {
       path: '/contact',
-      name: 'contact',
+      name: 'Contact',
       component: () => import('../views/Contact.vue')
     },
     {

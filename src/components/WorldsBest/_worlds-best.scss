@@ -1,6 +1,7 @@
 .worlds-best {
     text-align: center;
-    padding: 6rem 20px 0rem;
+    padding: 4rem 0 2rem;
+    border-bottom: #ddd solid 1px;
     h2 {
         margin-bottom: 0.5rem;
     }
@@ -38,6 +39,7 @@
         }
         @include breakpoint(md) {
             display: flex;
+            align-items: flex-start;
             li {
                 display: grid;
             }

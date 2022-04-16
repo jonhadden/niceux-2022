@@ -33,6 +33,7 @@
                 <div class="container">
                     <ul class="menu-items">
                         <li><a href="/">Home</a></li>
+                        <li><a href="/about">About Us</a></li>
                         <li><a href="mailto:info@niceux.com?subject=I have some questions about NiceUX">Contact</a></li>
                     </ul>
                 </div>

@@ -1,17 +1,20 @@
 <template>
   <section class="case-studies">
-    <section class="container">
-      <h2>A case study we're incredibly proud of</h2>
-      <ul v-if="caseStudies">
-        <li v-for="project in caseStudies" :key="project.id">
-          <RouterLink :to="{ name: 'CaseStudy', params: { slug: project.slug }}">
-            <img :src="project.acf.list_image.sizes.medium_large" alt="" />
-            <h3>{{ project.title.rendered }}</h3>
-            <p>{{ project.acf.lead_in }}</p>
-          </RouterLink>
-        </li>
-      </ul>
-    </section>
+    <ul v-if="caseStudies">
+      <li v-for="project in caseStudies" :key="project.id">
+        <RouterLink :to="{ name: 'CaseStudy', params: { slug: project.slug }}">
+          <div class="container">
+            <p class="case-study-badge">Case Study</p>
+            <h2>{{ project.title.rendered }}</h2>
+            <h3>{{ project.acf.lead_in }}</h3>
+            <div class="imagery">
+              <img :src="project.acf.list_image.sizes.medium_large" alt="" />
+              <img :src="project.acf.list_image_background.sizes.medium_large" alt="" />
+            </div>
+          </div>
+        </RouterLink>
+      </li>
+    </ul>
   </section>
 </template>
 
@@ -23,7 +26,6 @@ let caseStudies = ref(null)
 const caseStudyFetchUrl = 'https://niceux.com/admin/wp-json/wp/v2/projects';
 
 onMounted(async () => {
-
   if (!caseStudies.value) {
     caseStudies.value = await axios
         .get(caseStudyFetchUrl)
