@@ -2,7 +2,7 @@
   import Hero from '@/components/Hero/Hero.vue'
   import CaseStudies from '@/components/CaseStudies/CaseStudies.vue'
   import Clients from '@/components/Clients/Clients.vue'
-  import Testimonials from '@/components/Testimonials/Testimonials.vue'
+  import WorldsBest from '@/components/WorldsBest/WorldsBest.vue'
   import Promo from '@/components/Promo/Promo.vue'
 </script>
 
@@ -11,6 +11,7 @@
     <Hero />
     <CaseStudies />
     <Clients />
+    <WorldsBest />
     <Promo />
   </main>
 </template>

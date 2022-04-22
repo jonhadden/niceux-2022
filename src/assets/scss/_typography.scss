@@ -2,6 +2,9 @@
 a:focus, button:focus {
     outline: rgba(66, 211, 146, 0.9) solid 3px;
 }
+::selection {
+    background-color: #d4d4e6;
+}
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;

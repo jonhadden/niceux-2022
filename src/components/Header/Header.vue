@@ -4,18 +4,21 @@
     import SocialLinks from '@/components/SocialLinks/SocialLinks.vue' 
 
     const showMenu = ref(false)
-
-    function toggleMenu() {
-        showMenu.value = showMenu.value ? false : true
+    function toggleMenu(target) {
+        if(target === "logo") {
+            showMenu.value = false;    
+        } else {
+            showMenu.value = showMenu.value ? false : true
+        }        
     }
 </script>
-
 <template>
     <header class="main-header">
         <div class="container">
             <RouterLink 
                 :to="{ path: '/' }"
-                class="logo">
+                class="logo"
+                @click="toggleMenu('logo')">
                 <img src="@/assets/images/logo-niceux.svg" alt="Nice U X Logo" />
                 <span>NiceUX</span>
             </RouterLink>
@@ -32,9 +35,9 @@
                 :class="{ 'is-visible': showMenu }">
                 <div class="container">
                     <ul class="menu-items">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About Us</a></li>
-                        <li><a href="mailto:info@niceux.com?subject=I have some questions about NiceUX">Contact</a></li>
+                        <li><RouterLink :to="{ path: '/' }" @click="toggleMenu">Home</RouterLink></li>
+                        <li class="divider"><RouterLink :to="{ path: '/about' }" @click="toggleMenu">About</RouterLink></li>
+                        <li class="divider"><a href="mailto:info@niceux.com?subject=I have some questions about NiceUX">Send email to info@niceux.com</a></li>
                     </ul>
                 </div>
                 <SocialLinks />    
@@ -42,7 +45,6 @@
         </div>
     </header>
 </template>
-
 <style lang="scss">
   @import "./_header.scss";
 </style>

@@ -19,7 +19,6 @@
     </section>
   </section>
 </template>
-
 <style lang="scss">
   @import "./_hero.scss";
 </style>

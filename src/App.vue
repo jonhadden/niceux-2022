@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import Callout from '@/components/Callout/Callout.vue'
 import Header from '@/components/Header/Header.vue'
 import Footer from '@/components/Footer/Footer.vue'
 </script>
@@ -7,6 +8,7 @@ import Footer from '@/components/Footer/Footer.vue'
 <template>
   <a class="skip-to-content-link" href="#main">Skip to content</a>
   <section>
+    <Callout />
     <Header />
     <RouterView />
     <Footer />

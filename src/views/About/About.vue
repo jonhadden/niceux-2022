@@ -8,7 +8,6 @@
     <Testimonials />
   </section>
 </template>
-
 <style lang="scss">
   @import "./_about.scss";
 </style>

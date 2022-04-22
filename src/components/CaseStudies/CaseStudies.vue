@@ -17,29 +17,27 @@
     </ul>
   </section>
 </template>
-
 <script setup>
-import { ref, onMounted } from 'vue'
-import axios from 'axios'
+  import { ref, onMounted } from 'vue'
+  import axios from 'axios'
 
-let caseStudies = ref(null)
-const caseStudyFetchUrl = 'https://niceux.com/admin/wp-json/wp/v2/projects';
+  let caseStudies = ref(null)
+  const caseStudyFetchUrl = 'https://niceux.com/admin/wp-json/wp/v2/projects';
 
-onMounted(async () => {
-  if (!caseStudies.value) {
-    caseStudies.value = await axios
-        .get(caseStudyFetchUrl)
-        .then(response => {
-          const featured = response.data.filter(project => project.acf.featured_case_study == true);
-          return featured
-        })
-        .catch(function (error) {
-          console.log(error);
-        })
-  }
-})
+  onMounted(async () => {
+    if (!caseStudies.value) {
+      caseStudies.value = await axios
+          .get(caseStudyFetchUrl)
+          .then(response => {
+            const featured = response.data.filter(project => project.acf.featured_case_study == true);
+            return featured
+          })
+          .catch(function (error) {
+            console.log(error);
+          })
+    }
+  })
 </script>
-
 <style lang="scss">
   @import "./_case-studies.scss";
 </style>
