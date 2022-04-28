@@ -36,7 +36,8 @@
                 <div class="container">
                     <ul class="menu-items">
                         <li><RouterLink :to="{ path: '/' }" @click="toggleMenu">Home</RouterLink></li>
-                        <li class="divider"><RouterLink :to="{ path: '/about' }" @click="toggleMenu">About</RouterLink></li>
+                        <li><RouterLink :to="{ path: '/about' }" @click="toggleMenu">About</RouterLink></li>
+                        <li class="divider"><RouterLink :to="{ path: '/articles' }" @click="toggleMenu">Articles</RouterLink></li>
                         <li class="divider"><a href="mailto:info@niceux.com?subject=I have some questions about NiceUX">Send email to info@niceux.com</a></li>
                     </ul>
                 </div>

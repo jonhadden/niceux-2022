@@ -15,11 +15,16 @@
         </RouterLink>
       </li>
     </ul>
+    <section v-else>
+      <Loading />
+    </section>
   </section>
 </template>
 <script setup>
   import { ref, onMounted } from 'vue'
   import axios from 'axios'
+
+  import Loading from '@/components/Loading/Loading.vue'
 
   let caseStudies = ref(null)
   const caseStudyFetchUrl = 'https://niceux.com/admin/wp-json/wp/v2/projects';

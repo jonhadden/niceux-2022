@@ -1,0 +1,33 @@
+.articles {
+    header {
+        margin-top: 4rem;
+        padding-bottom: 3rem;
+        margin-bottom: 3rem;
+        border-bottom: #ddd dashed 1px;
+    }
+    h1, h2, h3, p {
+        color: #242430;
+    }
+    h1 {
+        font-family: 'Suez One', serif;
+        font-weight: 500;
+    }
+    h2 {
+        font-weight: 100;
+    }
+    h3 {
+        font-weight: 800;
+    }
+    main {
+        display: grid;
+        gap: 2rem;
+    }
+    a {
+        &:hover {
+            text-decoration: none;
+            h3 {
+                color: #0080f5;
+            }
+        }
+    }
+}

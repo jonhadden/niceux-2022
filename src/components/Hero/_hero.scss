@@ -8,7 +8,7 @@
         line-height: 1.2;
         margin-bottom: 1rem;
 
-        animation: fadeAndScale 800ms cubic-bezier(.39,-1.05,.58,1.95);
+        animation: fadeAndScale 1200ms cubic-bezier(.39,-1.05,.58,1.95);
         transform-origin: center bottom;
     }
     h2 {
@@ -16,12 +16,12 @@
         font-size: 1.35rem;
         font-weight: 300;
 
-        animation: fadeAndScale 1300ms cubic-bezier(.39,-1.05,.58,1.95);
+        animation: fadeAndScale 1500ms cubic-bezier(.39,-1.05,.58,1.95);
         transform-origin: center bottom;
     }
     a {
         
-        animation: fadeAndScale 2500ms cubic-bezier(.39,-1.05,.58,1.95);
+        animation: fadeAndScale 2000ms cubic-bezier(.39,-1.05,.58,1.95);
         transform-origin: center bottom;
     }
     .services-list {

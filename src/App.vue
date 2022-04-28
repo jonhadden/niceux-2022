@@ -1,11 +1,7 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import Callout from '@/components/Callout/Callout.vue'
-import Header from '@/components/Header/Header.vue'
-import Footer from '@/components/Footer/Footer.vue'
-</script>
-
 <template>
+  <metainfo>
+    <template v-slot:title="{ content }">{{ content ? `${content} | NiceUX Custom Software User Experience Design & Development` : `NiceUX Custom Software User Experience Design & Development` }}</template>
+  </metainfo>
   <a class="skip-to-content-link" href="#main">Skip to content</a>
   <section>
     <Callout />
@@ -14,7 +10,18 @@ import Footer from '@/components/Footer/Footer.vue'
     <Footer />
   </section>
 </template>
-
+<script setup>
+  import { RouterLink, RouterView } from 'vue-router'
+  import { useMeta } from 'vue-meta'
+  import Callout from '@/components/Callout/Callout.vue'
+  import Header from '@/components/Header/Header.vue'
+  import Footer from '@/components/Footer/Footer.vue'
+  
+  useMeta({
+    title: '',
+    htmlAttrs: { lang: 'en', amp: true }
+  })
+</script>
 <style lang="scss">
   @import "@/assets/scss/_global.scss";
 

@@ -1,0 +1,74 @@
+.post {
+    h1, h2, h3, p {
+        color: #242430;
+    }
+    h1, h2, h3, h4 {
+        font-family: 'Suez One', serif;
+        font-weight: 500;
+    }
+    h2 {
+        font-weight: 100;
+    }
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+        font-weight: 100;
+    }
+    ul, ol {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 100;
+        margin-bottom: 1.5rem;
+        li {
+            margin-left: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+    }
+    ul {
+        li {
+            list-style: disc;
+        }
+    }
+    img {
+        width: 100%;
+    }
+    header {
+        position: relative;
+        section {
+            z-index: 2;
+            background: #fff;
+            padding: 1rem;
+            position: relative;
+        }
+        h2 {
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
+    .post-hero-image {
+        z-index: 1;
+        margin-bottom: 0px;
+    }
+    main {
+        padding: 0 1rem 1rem;
+    }
+
+    @include breakpoint(md) {
+        header {
+            section {
+                padding: 3rem;
+            }
+        }
+        .post-hero-image {
+            overflow: hidden;
+            max-height: 500px;
+            margin-bottom: -100px;
+        }
+        main {
+            padding: 0 3rem 6rem;
+        }
+    }
+    @include breakpoint(lg) {
+        .post-hero-image {
+            margin-bottom: -300px;
+        }
+    }
+}
